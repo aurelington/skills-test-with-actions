@@ -37,8 +37,8 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: remark-lint-report
-          path: remark-lint-report.json
+          name: remark-lint-report2
+          path: remark-lint-report2.json
           id: report
 
       - name: show report
