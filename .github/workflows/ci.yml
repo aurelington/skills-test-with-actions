@@ -34,3 +34,12 @@ jobs:
         with:
           name: remark-lint-report
           path: remark-lint-report.json
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: remark-lint-report
+          path: remark-lint-report.json
+          id: report
+
+      - name: show report
+        run: echo "${{ steps.report.outputs.content }}"
